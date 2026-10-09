@@ -36,11 +36,11 @@ export default function Home() {
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif text-slate-900 mb-6 tracking-tight drop-shadow-sm">
               ALTERIA
             </h1>
-            <p className="text-xl md:text-2xl text-slate-700 font-serif italic mb-8 max-w-xl">
-              "Every world has a beginning. Alteria has a secret."
+            <p className="text-xl md:text-2xl text-slate-700 font-serif italic mb-8 max-w-xl leading-relaxed">
+              "Sometimes accepting your fate is the only way to change your destiny."
             </p>
             <p className="text-slate-600 text-lg mb-12 max-w-lg leading-relaxed font-medium">
-              Enter a world shaped by forgotten powers, impossible choices, and a truth buried beneath generations of silence.
+              Given a second life in the Great Sylphora Dynasty, Ragnar expected isolation—not a legendary mentor, an ancient dragon prophecy, and Sylvie, a free-spirited elven princess. Together, they defy the boundaries of empire and magic to forge their own future.
             </p>
 
             <div className="flex flex-wrap gap-4">
