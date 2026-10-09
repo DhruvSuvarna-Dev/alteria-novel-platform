@@ -124,31 +124,40 @@ export const chapters: Chapter[] = [
 
 export const characters: Character[] = [
   {
-    id: "kael",
-    name: "Kael Ardyn",
-    role: "The Reluctant Vessel",
-    description: "A boy from a forgotten village who accidentally awakens an ancient remnant of the first kingdom.",
-    biography: "Raised in the quiet valley of Oakhaven, Kael believed his life would be simple. He apprenticed as a cartographer, drawing maps of a world he never expected to see. All that changed when he discovered a cyan crystal in the ruins above his village.",
-    image: "/character_kael.jpg",
-    quote: "I didn't ask for this power, but I won't let it destroy what's left of us."
+    id: "ragnar",
+    name: "Ragnar Sylphora",
+    role: "Fragment of the Great Dragon",
+    description: "A boy reborn in Alteria with crimson eyes, a fire affinity, and a destiny shaped by prophecy.",
+    biography: "Once a frail and bullied orphan in another world, Ragnar died saving his only friend, Sylve. He demanded a second chance and awoke in Alteria, taken in by the First King. Armed with the Fafnir Blade Arts and incredible resolve, he trains relentlessly to protect those he cares about.",
+    image: "/character_kael.jpg", // Kept same as requested ("dont change imgs")
+    quote: "Sometimes accepting your fate is the only way to change your destiny."
   },
   {
-    id: "lyra",
-    name: "Lyra Vance",
-    role: "The Silent Watcher",
-    description: "A highly skilled operative from a faction dedicated to keeping the Hollow Lands sealed.",
-    biography: "Trained since childhood in the lethal arts and magical suppression, Lyra was sent to eliminate the anomaly in Oakhaven. Instead, she found a boy who shouldn't exist.",
-    image: "/api/placeholder/400/400", // Will use placeholder API for now
-    quote: "Some doors are meant to stay closed. You just kicked one wide open."
+    id: "sylvie",
+    name: "Sylvie Sylphora",
+    role: "Princess of Sylphora",
+    description: "The emerald-haired heir to the throne, a free-spirited prodigy of wind magic.",
+    biography: "Sheltered inside the palace for fourteen years by a protective mother, Sylvie yearned for freedom. She dances like the wind itself and wields wind magic with surgical precision. Alongside Ragnar, she prepares to defy the boundaries of her empire at the Academy.",
+    image: "/api/placeholder/400/400", 
+    quote: "You can’t change destiny just because you know what happens next."
   },
   {
-    id: "valerius",
-    name: "Lord Valerius",
-    role: "The Architect of Shadows",
-    description: "A charismatic but ruthless leader seeking to harness the lost magic of Alteria.",
-    biography: "Ruler of the northern territories, Valerius believes that the only way to save the world is to control its fundamental forces, regardless of the cost in human lives.",
+    id: "elandor",
+    name: "Elandor Sylphora",
+    role: "The First King",
+    description: "Founder of the Sylphora Dynasty, a legendary wind mage who lives simply in a hilltop shack.",
+    biography: "Elandor is the original ruler of the Sylphora Empire and a master of the Zirdunth Blade Arts. Preferring a quiet life away from the glittering palace, he takes Ragnar as his pupil and acts as a humorous, fiercely protective grandfather figure to Sylvie.",
     image: "/api/placeholder/400/400",
-    quote: "Power is not given, child. It is taken by those with the will to wield it."
+    quote: "A king must know when to leave the stage... and when to return."
+  },
+  {
+    id: "sylvana",
+    name: "Queen Sylvana Sylphora",
+    role: "The Third Queen",
+    description: "The regal and fiercely protective ruler of the Sylphora Dynasty.",
+    biography: "Scarred by the tragic death of her husband Erywn in Camelot, Queen Sylvana became highly overprotective of her daughter. Though initially cold to Ragnar for being human, his empathy and understanding of loss help heal her past wounds.",
+    image: "/api/placeholder/400/400",
+    quote: "I'd wish for my daughter to have everything she wants."
   }
 ];
 
@@ -156,34 +165,42 @@ export const worldEntries: WorldEntry[] = [
   {
     id: "realm-1",
     category: "REALM",
-    title: "The Kingdom of Aether",
-    description: "The once-great center of the world, now a floating ruin.",
-    content: "Legend says the Kingdom of Aether was suspended in the sky by pure magic. When the First Sundering occurred, it shattered, raining debris across the continent. Now, it exists as a treacherous floating archipelago where ancient technology and unstable magic collide.",
+    title: "The Great Sylphora Dynasty",
+    description: "The greatest Elven Empire to ever exist.",
+    content: "A breathtaking city of towering white stone buildings wrapped in vines of glowing flowers. The elves here are born under the blessing of the Great Nature Spirit, granting them the wind attribute. It was founded by Elandor and shaped by the Great Dragon Zirdunth.",
     status: "UNLOCKED"
   },
   {
-    id: "realm-2",
-    category: "REALM",
-    title: "The Hollow Lands",
-    description: "A forbidden zone where reality is constantly shifting.",
-    content: "A massive crater left behind by the Sundering. The laws of physics do not apply here. Time moves differently, and gravity is a suggestion. Only the most desperate or foolish venture in.",
+    id: "magic-1",
+    category: "MAGIC",
+    title: "Veil of Aetherium",
+    description: "The magical shield protecting Sylphora.",
+    content: "A vast, translucent dome humming with quiet energy that arches over the entire kingdom of Sylphora. It keeps the Elven Empire hidden from the outside world, acting as their ultimate shield and secret.",
     status: "UNLOCKED"
   },
   {
     id: "faction-1",
     category: "FACTION",
-    title: "The Silent Watchers",
-    description: "Guardians of the old seals.",
-    content: "An ancient order of warrior-mages dedicated to preventing the return of the chaotic magic that destroyed the first kingdom.",
+    title: "Sylvan Sentinels",
+    description: "The strongest four Elves alive.",
+    content: "An elite group of warriors strong enough to flatten armies alone. They answer only to the First King's will, then the acting ruler, and only then to royalty.",
     status: "CLASSIFIED"
   },
   {
-    id: "magic-1",
-    category: "MAGIC",
-    title: "Resonance",
-    description: "The fundamental power system of Alteria.",
-    content: "Magic in Alteria is not cast; it is resonated. Practitioners, known as Resonators, align their internal energy with the ambient frequencies of the world to manipulate elements, force, and even time.",
+    id: "realm-2",
+    category: "REALM",
+    title: "Kingdom of Camelot",
+    description: "A human kingdom with a dark past.",
+    content: "Once ruled by a tyrant named Kruger Camelot who enslaved elves, it has since been overthrown by a rebellion led by a noble young king named Arthur Pendragon, forging a fragile peace with Sylphora.",
     status: "COMING SOON"
+  },
+  {
+    id: "magic-2",
+    category: "MAGIC",
+    title: "Waterfall of Truth",
+    description: "A sacred site for training the heart.",
+    content: "A magical waterfall that doesn't just show the truth—it shows a person their heart’s truest desire and greatest regrets. It is used to calm the mind and strengthen the inner core.",
+    status: "UNLOCKED"
   }
 ];
 

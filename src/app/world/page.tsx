@@ -42,25 +42,28 @@ export default function WorldPage() {
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredEntries.map(entry => (
-            <div key={entry.id} className="glass-card bg-white p-6 relative overflow-hidden group hover:border-forest-300 transition-colors shadow-sm hover:shadow-md">
-              <span className="text-forest-600 text-[10px] font-bold tracking-widest uppercase mb-3 block">{entry.category}</span>
-              
-              <div className="flex items-start justify-between mb-4">
-                <h3 className="text-xl font-serif text-slate-900 group-hover:text-forest-700 transition-colors font-bold">{entry.title}</h3>
-                {!entry.isUnlocked && <Lock size={16} className="text-amber-500" />}
-              </div>
-
-              {entry.isUnlocked ? (
-                <p className="text-slate-600 text-sm leading-relaxed">{entry.description}</p>
-              ) : (
-                <div className="bg-slate-100 border border-slate-200 p-4 rounded text-center">
-                  <p className="text-slate-500 text-sm font-mono">[ DATA CLASSIFIED ]</p>
-                  <p className="text-slate-400 text-xs mt-2 font-medium">Continue reading to unlock</p>
+          {filteredEntries.map(entry => {
+            const isUnlocked = entry.status === 'UNLOCKED';
+            return (
+              <div key={entry.id} className="glass-card bg-white p-6 relative overflow-hidden group hover:border-forest-300 transition-colors shadow-sm hover:shadow-md">
+                <span className="text-forest-600 text-[10px] font-bold tracking-widest uppercase mb-3 block">{entry.category}</span>
+                
+                <div className="flex items-start justify-between mb-4">
+                  <h3 className="text-xl font-serif text-slate-900 group-hover:text-forest-700 transition-colors font-bold">{entry.title}</h3>
+                  {!isUnlocked && <Lock size={16} className="text-amber-500" />}
                 </div>
-              )}
-            </div>
-          ))}
+
+                {isUnlocked ? (
+                  <p className="text-slate-600 text-sm leading-relaxed">{entry.content}</p>
+                ) : (
+                  <div className="bg-slate-100 border border-slate-200 p-4 rounded text-center">
+                    <p className="text-slate-500 text-sm font-mono">[ DATA CLASSIFIED ]</p>
+                    <p className="text-slate-400 text-xs mt-2 font-medium">Continue reading to unlock</p>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -105,9 +105,9 @@ export default function Home() {
             
             <div>
               <h2 className="text-forest-600 font-bold uppercase tracking-[0.2em] text-sm mb-4">The Story Begins</h2>
-              <h3 className="text-4xl md:text-5xl font-serif mb-8 text-slate-900">Some worlds are discovered.<br/>Others are remembered.</h3>
+              <h3 className="text-4xl md:text-5xl font-serif mb-8 text-slate-900">Born weak in one world.<br/>Reborn as a legend in another.</h3>
               <p className="text-slate-600 text-lg leading-relaxed mb-6 font-medium">
-                When an ordinary life collides with a forgotten force, the boundaries between myth and reality begin to collapse. What follows is a journey through kingdoms, secrets, ancient powers and choices that could reshape Alteria forever.
+                After dying a tragic death to save his only friend, Ragnar awakens in the magical realm of Alteria. Taken in by the legendary First King of the Sylphora Dynasty, he must master ancient blade arts, uncover the truth behind his crimson eyes, and fulfill his destiny as the Fragment of the Great Dragon.
               </p>
               <Link
                 href="/read/prologue"
