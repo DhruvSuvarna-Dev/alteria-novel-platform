@@ -18,12 +18,13 @@ export default function Home() {
             src="/hero_landscape.jpg"
             alt="Alteria Landscape"
             fill
-            className="object-cover object-center opacity-40"
+            className="object-cover object-center opacity-70"
             priority
           />
-          {/* Light elegant overlay instead of dark */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-white/10" />
+          {/* Smooth gradient from solid white on the left (for text) to transparent on the right (for image) */}
+          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
+          {/* Fade to background at the bottom to blend with next section */}
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
         </div>
 
         <div className="container relative z-10 px-6 mt-16 flex flex-col md:flex-row items-center justify-between gap-12">
