@@ -9,24 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#05070D",
-        foreground: "#E2E8F0",
-        navy: {
-          900: "#0A0E17",
-          800: "#111827",
-          700: "#1E293B",
-        },
-        violet: {
-          primary: "#8B5CF6",
-          dark: "#7C3AED",
-          light: "#A78BFA",
-        },
-        cyan: {
-          primary: "#06B6D4",
-          light: "#22D3EE",
+        background: "#F8FAFC", // Light slate-50
+        foreground: "#0F172A", // Dark slate-900
+        forest: {
+          50: '#F0FDF4',
+          100: '#DCFCE7',
+          200: '#BBF7D0',
+          300: '#86EFAC',
+          400: '#4ADE80',
+          500: '#22C55E', // Primary Green
+          600: '#16A34A',
+          700: '#15803D',
+          800: '#166534',
+          900: '#14532D', // Dark Green
         },
         gold: {
-          primary: "#F59E0B",
+          primary: "#D97706", // Darker gold for text readability on light bg
           light: "#FBBF24",
         },
       },
@@ -36,7 +34,7 @@ const config: Config = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-navy': 'linear-gradient(to bottom, #05070D, #0A0E17)',
+        'gradient-forest': 'linear-gradient(to bottom, #F8FAFC, #DCFCE7)',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',
