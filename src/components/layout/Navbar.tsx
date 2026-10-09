@@ -39,13 +39,22 @@ export default function Navbar() {
       >
         <div className="container mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-sm bg-gradient-to-br from-forest-500 to-forest-700 flex items-center justify-center text-white font-serif font-bold text-xl">
-              A
+          <Link href="/" className="flex flex-col items-center justify-center group px-2 py-1">
+            <div className="flex items-center gap-2 opacity-80 group-hover:opacity-100 transition-opacity mb-[-4px]">
+              <div className="w-6 h-[1px] bg-gradient-to-r from-transparent to-amber-600"></div>
+              <span className="text-amber-600 text-[10px] leading-none">✦</span>
+              <div className="w-6 h-[1px] bg-gradient-to-l from-transparent to-amber-600"></div>
             </div>
-            <span className="font-serif text-2xl tracking-widest text-slate-900 group-hover:text-forest-600 transition-colors">
+            
+            <span className="font-serif text-2xl tracking-[0.2em] bg-clip-text text-transparent bg-gradient-to-b from-yellow-600 to-amber-800 transition-all">
               ALTERIA
             </span>
+
+            <div className="flex items-center gap-2 opacity-80 group-hover:opacity-100 transition-opacity mt-[-2px]">
+              <div className="w-8 h-[1px] bg-gradient-to-r from-transparent to-amber-600"></div>
+              <span className="text-amber-600 text-[8px] leading-none">❖</span>
+              <div className="w-8 h-[1px] bg-gradient-to-l from-transparent to-amber-600"></div>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
@@ -107,11 +116,22 @@ export default function Navbar() {
             className="fixed inset-0 z-[100] bg-white flex flex-col"
           >
             <div className="flex items-center justify-between p-6 border-b border-slate-200">
-              <div className="flex items-center gap-2">
-                 <div className="w-8 h-8 rounded-sm bg-gradient-to-br from-forest-500 to-forest-700 flex items-center justify-center text-white font-serif font-bold text-xl">
-                  A
+              <div className="flex flex-col items-center justify-center group px-2 py-1">
+                <div className="flex items-center gap-2 mb-[-4px]">
+                  <div className="w-6 h-[1px] bg-gradient-to-r from-transparent to-amber-600"></div>
+                  <span className="text-amber-600 text-[10px] leading-none">✦</span>
+                  <div className="w-6 h-[1px] bg-gradient-to-l from-transparent to-amber-600"></div>
                 </div>
-                <span className="font-serif text-2xl tracking-widest text-slate-900">ALTERIA</span>
+                
+                <span className="font-serif text-2xl tracking-[0.2em] bg-clip-text text-transparent bg-gradient-to-b from-yellow-600 to-amber-800">
+                  ALTERIA
+                </span>
+
+                <div className="flex items-center gap-2 mt-[-2px]">
+                  <div className="w-8 h-[1px] bg-gradient-to-r from-transparent to-amber-600"></div>
+                  <span className="text-amber-600 text-[8px] leading-none">❖</span>
+                  <div className="w-8 h-[1px] bg-gradient-to-l from-transparent to-amber-600"></div>
+                </div>
               </div>
               <button
                 className="text-slate-600 hover:text-slate-900"

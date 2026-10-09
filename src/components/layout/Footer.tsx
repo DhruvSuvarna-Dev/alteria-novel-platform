@@ -12,11 +12,22 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="flex items-center gap-2 mb-4 group">
-              <div className="w-8 h-8 rounded-sm bg-gradient-to-br from-forest-500 to-forest-700 flex items-center justify-center text-white font-serif font-bold text-xl">
-                A
+            <Link href="/" className="inline-flex flex-col items-center justify-center group mb-6 px-2 py-1">
+              <div className="flex items-center gap-2 opacity-80 group-hover:opacity-100 transition-opacity mb-[-4px]">
+                <div className="w-6 h-[1px] bg-gradient-to-r from-transparent to-amber-600"></div>
+                <span className="text-amber-600 text-[10px] leading-none">✦</span>
+                <div className="w-6 h-[1px] bg-gradient-to-l from-transparent to-amber-600"></div>
               </div>
-              <span className="font-serif text-2xl tracking-widest text-slate-900 group-hover:text-forest-600 transition-colors">ALTERIA</span>
+              
+              <span className="font-serif text-3xl tracking-[0.2em] bg-clip-text text-transparent bg-gradient-to-b from-yellow-600 to-amber-800 transition-all">
+                ALTERIA
+              </span>
+
+              <div className="flex items-center gap-2 opacity-80 group-hover:opacity-100 transition-opacity mt-[-2px]">
+                <div className="w-8 h-[1px] bg-gradient-to-r from-transparent to-amber-600"></div>
+                <span className="text-amber-600 text-[8px] leading-none">❖</span>
+                <div className="w-8 h-[1px] bg-gradient-to-l from-transparent to-amber-600"></div>
+              </div>
             </Link>
             <p className="text-slate-600 max-w-sm font-serif italic text-lg mb-6">
               "Every world has a beginning."
