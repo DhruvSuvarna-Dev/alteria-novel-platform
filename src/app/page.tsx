@@ -4,7 +4,7 @@ import { ChevronRight } from 'lucide-react';
 import { getChapters, getCharacters, getWorldEntries } from '@/lib/database/mockDatabase';
 
 export default function Home() {
-  const chapters = getChapters().slice(0, 3);
+  const volumes = getChapters();
   const characters = getCharacters();
   const realms = getWorldEntries().filter(e => e.category === 'REALM').slice(0, 3);
 
@@ -45,7 +45,7 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-4">
               <Link
-                href="/read/prologue"
+                href="/read/volume-1"
                 className="px-8 py-4 bg-forest-600 text-white hover:bg-forest-700 transition-colors rounded-full font-bold uppercase tracking-wider text-sm flex items-center gap-2 shadow-lg hover:shadow-xl"
               >
                 Start Reading <ChevronRight size={18} />
@@ -110,10 +110,10 @@ export default function Home() {
                 After dying a tragic death to save his only friend, Ragnar awakens in the magical realm of Alteria. Taken in by the legendary First King of the Sylphora Dynasty, he must master ancient blade arts, uncover the truth behind his crimson eyes, and fulfill his destiny as the Fragment of the Great Dragon.
               </p>
               <Link
-                href="/read/prologue"
+                href="/read/volume-1"
                 className="inline-flex items-center gap-2 text-forest-700 hover:text-forest-800 transition-colors font-bold tracking-wider uppercase"
               >
-                Read the first chapter <ChevronRight size={18} />
+                Read the first volume <ChevronRight size={18} />
               </Link>
             </div>
           </div>
@@ -152,7 +152,7 @@ export default function Home() {
                </div>
                
                <div className="flex flex-wrap gap-4">
-                 <Link href="/read/prologue" className="px-6 py-3 border-2 border-forest-200 text-forest-700 rounded-full hover:bg-forest-50 transition-colors text-sm font-bold tracking-widest uppercase">
+                 <Link href="/read/volume-1" className="px-6 py-3 border-2 border-forest-200 text-forest-700 rounded-full hover:bg-forest-50 transition-colors text-sm font-bold tracking-widest uppercase">
                    Free Preview
                  </Link>
                  <Link href="/buy" className="px-6 py-3 bg-forest-600 text-white rounded-full hover:bg-forest-700 transition-colors text-sm font-bold tracking-widest uppercase shadow-lg">
@@ -164,24 +164,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. FREE PREVIEW TEASER */}
+      {/* 4. VOLUMES PREVIEW TEASER */}
       <section className="py-32">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-serif text-slate-900 mb-4 font-bold">Begin the Journey</h2>
-            <p className="text-slate-600 font-medium">The first chapters are free to read.</p>
+            <p className="text-slate-600 font-medium">Volume 1 is free to read. Volumes 2, 3, and 4 are unlocked under the premium membership.</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {chapters.map((chapter) => (
-              <Link href={`/read/${chapter.id}`} key={chapter.id} className="glass-card bg-white p-8 group hover:border-forest-300 transition-colors flex flex-col h-full shadow-sm hover:shadow-md">
-                <span className="text-forest-600 text-xs font-bold tracking-widest uppercase mb-4 block">FREE</span>
-                <h3 className="text-xl font-serif text-slate-900 mb-3 group-hover:text-forest-700 transition-colors font-bold">{chapter.title}</h3>
-                <p className="text-slate-600 text-sm mb-6 flex-grow leading-relaxed">{chapter.description}</p>
-                <div className="flex items-center justify-between mt-auto">
-                  <span className="text-slate-500 text-xs font-medium">{chapter.readingTime} read</span>
-                  <span className="text-forest-700 text-sm font-bold flex items-center opacity-0 group-hover:opacity-100 transition-opacity -translate-x-4 group-hover:translate-x-0">
-                    Read <ChevronRight size={16} className="ml-1" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {volumes.map((volume) => (
+              <Link 
+                href={volume.isFree ? `/read/${volume.id}` : `/buy`} 
+                key={volume.id} 
+                className="glass-card bg-white p-6 group hover:border-forest-300 transition-colors flex flex-col h-full shadow-sm hover:shadow-md border border-slate-200"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  {volume.isFree ? (
+                    <span className="text-forest-700 bg-forest-100 text-xs font-bold tracking-widest uppercase px-2.5 py-0.5 rounded-full">FREE</span>
+                  ) : (
+                    <span className="text-amber-800 bg-amber-100 text-xs font-bold tracking-widest uppercase px-2.5 py-0.5 rounded-full">PREMIUM</span>
+                  )}
+                  <span className="text-slate-500 text-xs font-medium">{volume.readingTime} read</span>
+                </div>
+                <h3 className="text-lg font-serif text-slate-900 mb-3 group-hover:text-forest-700 transition-colors font-bold leading-snug">{volume.title}</h3>
+                <p className="text-slate-600 text-xs mb-6 flex-grow leading-relaxed line-clamp-3">{volume.description}</p>
+                <div className="flex items-center justify-between mt-auto pt-4 border-t border-slate-100">
+                  <span className="text-forest-700 text-xs font-bold flex items-center">
+                    {volume.isFree ? 'Read Volume' : 'Unlock'} <ChevronRight size={14} className="ml-1" />
                   </span>
                 </div>
               </Link>
@@ -189,7 +199,7 @@ export default function Home() {
           </div>
           <div className="mt-12 text-center">
              <Link href="/chapters" className="inline-flex items-center gap-2 text-forest-700 hover:text-forest-800 transition-colors font-bold tracking-wider uppercase text-sm">
-                View all chapters <ChevronRight size={18} />
+                View all volumes <ChevronRight size={18} />
               </Link>
           </div>
         </div>

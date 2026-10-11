@@ -1,11 +1,12 @@
 import Image from 'next/image';
-import { Check } from 'lucide-react';
+import { Check, Sparkles } from 'lucide-react';
 
 export default function BuyPage() {
   const benefits = [
-    "Instant access to all current chapters",
-    "Future chapters added automatically",
-    "Distraction-free custom reader",
+    "Instant access to Volumes 2, 3, and 4",
+    "Over 6+ hours of premium story reading time",
+    "Future volume expansions added automatically",
+    "Distraction-free custom reader with text scaling",
     "Exclusive lore and character artwork unlocks",
     "Support the author directly"
   ];
@@ -15,8 +16,11 @@ export default function BuyPage() {
       <div className="container mx-auto px-6 max-w-5xl">
         
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-serif text-slate-900 mb-6 font-bold">Unlock the Full Story</h1>
-          <p className="text-slate-600 text-lg font-medium">Join thousands of readers and step into the world of Alteria.</p>
+          <div className="inline-flex items-center gap-1.5 bg-forest-100 text-forest-700 border border-forest-200 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
+            <Sparkles size={14} /> Premium Membership
+          </div>
+          <h1 className="text-4xl md:text-5xl font-serif text-slate-900 mb-6 font-bold">Unlock All Volumes</h1>
+          <p className="text-slate-600 text-lg font-medium">Volume 1 is free for everyone. Upgrade to Premium to unlock Volumes 2, 3, and 4.</p>
         </div>
 
         <div className="glass-card bg-white p-2 md:p-4 rounded-2xl overflow-hidden shadow-xl border border-slate-200">
@@ -30,7 +34,7 @@ export default function BuyPage() {
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
-                <span className="text-forest-400 font-bold uppercase tracking-widest text-xs mb-2">Book I</span>
+                <span className="text-forest-400 font-bold uppercase tracking-widest text-xs mb-2">Book I • Volumes 1–4</span>
                 <h3 className="text-white font-serif text-3xl mb-1">ALTERIA</h3>
                 <p className="text-slate-300 text-sm">Full Digital Edition</p>
               </div>
@@ -39,10 +43,10 @@ export default function BuyPage() {
             {/* Right Content Side */}
             <div className="w-full md:w-3/5 p-8 md:p-12 lg:p-16 flex flex-col justify-center bg-white">
               <div className="mb-8">
-                <h2 className="text-3xl font-serif text-slate-900 mb-2 font-bold">Premium Access</h2>
+                <h2 className="text-3xl font-serif text-slate-900 mb-2 font-bold">Premium Membership</h2>
                 <div className="flex items-end gap-2">
                   <span className="text-4xl font-bold text-forest-600">₹299</span>
-                  <span className="text-slate-500 mb-1 font-medium">one-time purchase</span>
+                  <span className="text-slate-500 mb-1 font-medium">one-time access</span>
                 </div>
               </div>
 
@@ -58,11 +62,11 @@ export default function BuyPage() {
               </ul>
 
               <button className="w-full py-4 bg-forest-600 text-white rounded-xl hover:bg-forest-700 transition-colors font-bold tracking-widest uppercase shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200">
-                Proceed to Checkout
+                Get Premium Membership
               </button>
               
               <p className="text-center text-xs text-slate-500 mt-6 font-medium">
-                Secure payment powered by Stripe. Instant access upon purchase.
+                Instant access to Volumes 2, 3, and 4 upon confirmation.
               </p>
             </div>
           </div>

@@ -22,7 +22,7 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'The Novel', path: '/#novel' },
-    { name: 'Chapters', path: '/chapters' },
+    { name: 'Volumes', path: '/chapters' },
     { name: 'World', path: '/world' },
     { name: 'Characters', path: '/characters' },
     { name: 'About', path: '/about' },
@@ -81,7 +81,7 @@ export default function Navbar() {
               <User size={20} />
             </Link>
             <Link
-              href="/chapters"
+              href="/read/volume-1"
               className="px-5 py-2 text-sm uppercase tracking-wider font-bold text-slate-700 border border-slate-300 rounded-full hover:bg-slate-100 transition-colors bg-white/80"
             >
               Read Now
@@ -156,7 +156,7 @@ export default function Navbar() {
 
             <div className="p-6 border-t border-slate-200 flex flex-col gap-4">
               <Link
-                href="/chapters"
+                href="/read/volume-1"
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="w-full py-4 text-center border border-slate-300 rounded-lg text-slate-700 font-bold tracking-widest uppercase hover:bg-slate-50"
               >

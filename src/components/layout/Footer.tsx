@@ -40,10 +40,10 @@ export default function Footer() {
           <div>
             <h4 className="text-slate-900 font-bold uppercase tracking-widest text-sm mb-6">Navigation</h4>
             <ul className="flex flex-col gap-3">
-              {['Home', 'The Novel', 'Chapters', 'World', 'Characters', 'About'].map((item) => (
+              {['Home', 'The Novel', 'Volumes', 'World', 'Characters', 'About'].map((item) => (
                 <li key={item}>
                   <Link
-                    href={item === 'Home' ? '/' : `/${item.toLowerCase().replace('the ', '')}`}
+                    href={item === 'Home' ? '/' : item === 'Volumes' ? '/chapters' : `/${item.toLowerCase().replace('the ', '')}`}
                     className="text-slate-600 hover:text-forest-600 transition-colors text-sm font-medium"
                   >
                     {item}

@@ -61,64 +61,67 @@ export const currentBook: Book = {
 
 export const chapters: Chapter[] = [
   {
-    id: "prologue",
+    id: "volume-1",
     bookId: "book-1",
-    number: 0,
-    title: "PROLOGUE: The World Before",
-    description: "Some worlds are discovered. Others are remembered. A glimpse into the shattered history of Alteria.",
-    content: "<p>The sky above the Hollow Lands had not been blue for a thousand years. Instead, it was a bruised, turbulent canvas of violet and ash, perpetually swirling around the shattered remains of the first kingdom.</p><p>Kael stood at the edge of the abyss, the wind tearing at his cloak. He held the fragment in his hand—a small, humming crystal that glowed with an impossible cyan light. It was a piece of the world that was, a world he had only seen in dreams that didn't belong to him.</p><p><i>\"You shouldn't have found that,\"</i> a voice whispered from the shadows behind him.</p><p>He didn't turn around. He didn't need to.</p>",
-    readingTime: "5 min",
+    number: 1,
+    title: "VOLUME 01: The Second Chance",
+    description: "Ragnar's final moments in the old world, rebirth in the Great Sylphora Dynasty, and the trial beneath the mystical Waterfall of Truth.",
+    content: `<div class="space-y-6">
+      <h2 class="text-2xl font-serif font-bold text-slate-900 border-b border-slate-200 pb-2">Part I: The Second Chance</h2>
+      <p>Ragnar was born a weak-bodied human into the world of man. Abandoned when he was just a child and taken in by a local orphanage, his life was cruel—he was frail, constantly bullied, and alone. No one liked him, and no one cared, except for one girl: Sylve.</p>
+      <p>Then came that fateful afternoon. Bullying broke into violence, and as steel scaffolding rods fell from a construction site, Ragnar made his choice: he shoved Sylve out of harm's way. Impaled, bleeding out alone on the cold asphalt, Ragnar's spirit cried out to the heavens:</p>
+      <blockquote class="border-l-4 border-forest-500 pl-4 italic text-slate-700 my-4">"I need a second chance! I demand a second chance! GIVE ME A SECOND CHANCE!!!"</blockquote>
+      <p>The sky shimmered. A deep, ancient voice answered: <em>"Alright. Let's give you one more chance."</em></p>
+
+      <h2 class="text-2xl font-serif font-bold text-slate-900 border-b border-slate-200 pb-2 pt-6">Part II: A New Start</h2>
+      <p>A beam of blinding light tore through the atmosphere, carving a smoldering crater into an unfamiliar realm. When Ragnar awakened with a newly forged body and glowing crimson eyes, he found himself deep within an ancient forest, sheltered by a wise old elf named Elandor Sylphora.</p>
+      <p>There, overlooking towering white spires and roaring waterfalls, Ragnar learned the truth: he stood in the greatest elven empire to ever exist—<strong>The Great Sylphora Dynasty</strong>. And the old man before him was none other than its First King and Founder.</p>
+
+      <h2 class="text-2xl font-serif font-bold text-slate-900 border-b border-slate-200 pb-2 pt-6">Part III: The Waterfall of Truth</h2>
+      <p>Sent downstream to awaken his magical affinity, Ragnar reached the legendary Waterfall of Truth. Beneath the pounding torrents, the waters forced him into a torturous loop of his past death—forcing him to relive his sacrifice for Sylve over and over until he finally understood the secret of destiny:</p>
+      <blockquote class="border-l-4 border-forest-500 pl-4 italic text-slate-700 my-4">"Sometimes accepting your fate is the only way to change your destiny."</blockquote>
+      <p>By accepting his past with zero regrets, the illusion shattered. Ragnar emerged triumphant, meeting the mysterious emerald-haired elven girl dancing beneath the moonlight—Sylvie.</p>
+    </div>`,
+    readingTime: "2 hrs",
     isFree: true,
     price: 0,
     publishedAt: "2026-10-01",
   },
   {
-    id: "chap-1",
+    id: "volume-2",
     bookId: "book-1",
-    number: 1,
-    title: "CHAPTER 01: The First Sign",
-    description: "An ordinary life collides with a forgotten force.",
-    content: "<p>The village of Oakhaven was unremarkable in every conceivable way. It was the kind of place people passed through on their way to somewhere more important, assuming they knew it existed at all.</p><p>For seventeen years, Kael had known every stone, every tree, and every weathered face in this secluded valley. But today, the stones were humming.</p><p>It started as a faint vibration beneath his boots as he walked the path to the upper ridge. By the time he reached the old watchtower ruins, the air itself felt heavy, charged with static that made the hair on his arms stand on end.</p><p>Then, the ancient stonework began to glow.</p>",
-    readingTime: "12 min",
-    isFree: true,
-    price: 0,
+    number: 2,
+    title: "VOLUME 02: The First King & The Princess",
+    description: "Training under Elandor, discovering Sylvie's true royal heritage, inventing the Fafnir Blade Arts, and confronting the royal court as the Fragment of the Great Dragon.",
+    content: "<p>This is a premium volume unlocked with the Alteria Premium Membership. Unlock to continue reading Ragnar and Sylvie's journey through the royal court and beyond.</p>",
+    readingTime: "2 hrs",
+    isFree: false,
+    price: 199,
     publishedAt: "2026-10-05",
   },
   {
-    id: "chap-2",
+    id: "volume-3",
     bookId: "book-1",
-    number: 2,
-    title: "CHAPTER 02: A Door That Should Not Exist",
-    description: "The boundaries between myth and reality begin to collapse.",
-    content: "<p>The light was blinding. When Kael finally opened his eyes, the ruins were gone. Or rather, they were whole again.</p><p>Tall spires of smooth, obsidian-like stone reached toward a sky that was a breathtaking, terrifying expanse of stars. There was no sun, yet everything was illuminated by a soft, ambient luminescence that seemed to bleed from the architecture itself.</p><p>\"Where am I?\" he breathed, his voice barely a whisper in the vast, echoing silence.</p><p>He took a step forward, and the ground rippled like water beneath his feet.</p>",
-    readingTime: "15 min",
-    isFree: true,
-    price: 0,
+    number: 3,
+    title: "VOLUME 03: The Queen's Burden",
+    description: "Unraveling Queen Sylvana's grief, the sacrifice of diplomat Erywn, the dark history with Camelot, and the formation of a genuine family bond.",
+    content: "<p>This is a premium volume unlocked with the Alteria Premium Membership. Unlock to continue reading Ragnar and Sylvie's journey through the royal court and beyond.</p>",
+    readingTime: "2 hrs",
+    isFree: false,
+    price: 199,
     publishedAt: "2026-10-10",
   },
   {
-    id: "chap-3",
-    bookId: "book-1",
-    number: 3,
-    title: "CHAPTER 03: The Forgotten Name",
-    description: "What follows is a journey through kingdoms, secrets, and ancient powers.",
-    content: "<p>This is a locked chapter. In the full implementation, this content would only be served to users who have successfully authenticated and have a verified purchase record for Book 1 in the database.</p><p>The story continues with Kael discovering the true nature of the city, encountering the mysterious faction known as the Silent Watchers, and realizing that his arrival was not an accident.</p>",
-    readingTime: "18 min",
-    isFree: false,
-    price: 50,
-    publishedAt: "2026-10-15",
-  },
-  {
-    id: "chap-4",
+    id: "volume-4",
     bookId: "book-1",
     number: 4,
-    title: "CHAPTER 04: The Aether's Call",
-    description: "Choices that could reshape Alteria forever.",
-    content: "<p>This is a locked chapter.</p>",
-    readingTime: "20 min",
+    title: "VOLUME 04: The Knighting & Beyond",
+    description: "Years of discipline at the Elven Academy, the official Knighting by Queen Sylvana, receiving the name Ragnar Sylphora, and the departure toward Camelot.",
+    content: "<p>This is a premium volume unlocked with the Alteria Premium Membership. Unlock to continue reading Ragnar and Sylvie's journey through the royal court and beyond.</p>",
+    readingTime: "2 hrs",
     isFree: false,
-    price: 50,
-    publishedAt: "2026-10-20",
+    price: 199,
+    publishedAt: "2026-10-15",
   }
 ];
 
@@ -206,7 +209,12 @@ export const worldEntries: WorldEntry[] = [
 
 // Data Access Helpers
 export const getChapters = () => chapters;
-export const getChapterById = (id: string) => chapters.find(c => c.id === id);
+export const getChapterById = (id: string) => {
+  if (id === 'prologue' || id === 'chap-1' || id === '1') {
+    return chapters.find(c => c.id === 'volume-1') || chapters[0];
+  }
+  return chapters.find(c => c.id === id);
+};
 export const getCharacters = () => characters;
 export const getWorldEntries = () => worldEntries;
 export const getBook = () => currentBook;
