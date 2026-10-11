@@ -105,7 +105,7 @@ export default function Home() {
             
             <div>
               <h2 className="text-forest-600 font-bold uppercase tracking-[0.2em] text-sm mb-4">The Story Begins</h2>
-              <h3 className="text-4xl md:text-5xl font-serif mb-8 text-slate-900 leading-tight">Destiny never played in my favor in my last life.<br/>But it&apos;s time to write my own destiny now.</h3>
+              <h3 className="text-4xl md:text-5xl font-serif mb-8 text-slate-900 leading-tight">Destiny never played in my favor in my last life.<br/>It&apos;s time to write my own destiny now.</h3>
               <p className="text-slate-600 text-lg leading-relaxed mb-6 font-medium">
                 After dying a tragic death to save his only friend, Ragnar awakens in the magical realm of Alteria. Taken in by the legendary First King of the Sylphora Dynasty, he must master ancient blade arts, uncover the truth behind his crimson eyes, and fulfill his destiny as the Fragment of the Great Dragon.
               </p>
