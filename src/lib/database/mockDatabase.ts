@@ -166,19 +166,19 @@ export const characters: Character[] = [
 
 export const worldEntries: WorldEntry[] = [
   {
-    id: "realm-1",
-    category: "REALM",
+    id: "kingdom-1",
+    category: "KINGDOM",
     title: "The Great Sylphora Dynasty",
     description: "The greatest Elven Empire to ever exist.",
     content: "A breathtaking city of towering white stone buildings wrapped in vines of glowing flowers. The elves here are born under the blessing of the Great Nature Spirit, granting them the wind attribute. It was founded by Elandor and shaped by the Great Dragon Zirdunth.",
     status: "UNLOCKED"
   },
   {
-    id: "magic-1",
-    category: "MAGIC",
-    title: "Veil of Aetherium",
-    description: "The magical shield protecting Sylphora.",
-    content: "A vast, translucent dome humming with quiet energy that arches over the entire kingdom of Sylphora. It keeps the Elven Empire hidden from the outside world, acting as their ultimate shield and secret.",
+    id: "kingdom-2",
+    category: "KINGDOM",
+    title: "Kingdom of Camelot",
+    description: "A human realm beyond the elven borders.",
+    content: "Once ruled by a tyrant named Kruger Camelot who enslaved elves, it was overthrown by a rebellion led by a noble young king named Arthur Pendragon, forging a fragile peace with Sylphora.",
     status: "UNLOCKED"
   },
   {
@@ -186,23 +186,15 @@ export const worldEntries: WorldEntry[] = [
     category: "FACTION",
     title: "Sylvan Sentinels",
     description: "The strongest four Elves alive.",
-    content: "An elite group of warriors strong enough to flatten armies alone. They answer only to the First King's will, then the acting ruler, and only then to royalty.",
-    status: "CLASSIFIED"
+    content: "An elite group of warriors strong enough to flatten armies alone. They answer strictly to the First King's will, then the acting ruler, and only then to royalty.",
+    status: "UNLOCKED"
   },
   {
-    id: "realm-2",
-    category: "REALM",
-    title: "Kingdom of Camelot",
-    description: "A human kingdom with a dark past.",
-    content: "Once ruled by a tyrant named Kruger Camelot who enslaved elves, it has since been overthrown by a rebellion led by a noble young king named Arthur Pendragon, forging a fragile peace with Sylphora.",
-    status: "COMING SOON"
-  },
-  {
-    id: "magic-2",
+    id: "magic-1",
     category: "MAGIC",
     title: "Waterfall of Truth",
     description: "A sacred site for training the heart.",
-    content: "A magical waterfall that doesn't just show the truth—it shows a person their heart’s truest desire and greatest regrets. It is used to calm the mind and strengthen the inner core.",
+    content: "A magical waterfall that doesn't just show the truth—it shows a person their heart’s truest desire and greatest regrets. It is used to calm the mind, test resolve, and awaken one's inner power.",
     status: "UNLOCKED"
   }
 ];

@@ -6,7 +6,6 @@ import { getChapters, getCharacters, getWorldEntries } from '@/lib/database/mock
 export default function Home() {
   const volumes = getChapters();
   const characters = getCharacters();
-  const realms = getWorldEntries().filter(e => e.category === 'REALM').slice(0, 3);
 
   return (
     <div className="flex flex-col min-h-screen">
