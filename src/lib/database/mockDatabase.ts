@@ -159,7 +159,7 @@ export const characters: Character[] = [
     role: "The Third Queen",
     description: "The regal and fiercely protective ruler of the Sylphora Dynasty.",
     biography: "Scarred by the tragic death of her husband Erywn in Camelot, Queen Sylvana became highly overprotective of her daughter. Though initially cold to Ragnar for being human, his empathy and understanding of loss help heal her past wounds.",
-    image: "/api/placeholder/400/400",
+    image: "/character_queen.jpg",
     quote: "I'd wish for my daughter to have everything she wants."
   }
 ];

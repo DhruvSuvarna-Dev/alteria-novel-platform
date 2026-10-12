@@ -15,10 +15,10 @@ export default function CharactersPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {characters.map((character) => (
-            <div key={character.id} className="glass-card bg-white overflow-hidden group border border-slate-200 shadow-sm hover:shadow-md hover:border-forest-300 transition-colors">
-              <div className="relative h-[400px] w-full bg-slate-100 overflow-hidden border-b border-slate-200">
+            <div key={character.id} className="glass-card bg-white overflow-hidden group border border-slate-200 shadow-sm hover:shadow-md hover:border-forest-300 transition-colors flex flex-col h-full">
+              <div className="relative h-[380px] w-full bg-slate-100 overflow-hidden border-b border-slate-200 flex-shrink-0">
                 {character.image.startsWith('/api') ? (
                    <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-400 opacity-50">
                      <span className="font-serif text-6xl mb-2">?</span>
@@ -29,7 +29,7 @@ export default function CharactersPage() {
                     src={character.image}
                     alt={character.name}
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   />
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 via-transparent to-transparent opacity-80" />
