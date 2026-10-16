@@ -132,7 +132,7 @@ export const characters: Character[] = [
     role: "Fragment of the Great Dragon",
     description: "A boy reborn in Alteria with crimson eyes, a fire affinity, and a destiny shaped by prophecy.",
     biography: "Once a frail and bullied orphan in another world, Ragnar died saving his only friend, Sylve. He demanded a second chance and awoke in Alteria, taken in by the First King. Armed with the Fafnir Blade Arts and incredible resolve, he trains relentlessly to protect those he cares about.",
-    image: "/character_kael.jpg", // Kept same as requested ("dont change imgs")
+    image: "/character_ragnar.jpg",
     quote: "Sometimes accepting your fate is the only way to change your destiny."
   },
   {
@@ -141,7 +141,7 @@ export const characters: Character[] = [
     role: "Princess of Sylphora",
     description: "The emerald-haired heir to the throne, a free-spirited prodigy of wind magic.",
     biography: "Sheltered inside the palace for fourteen years by a protective mother, Sylvie yearned for freedom. She dances like the wind itself and wields wind magic with surgical precision. Alongside Ragnar, she prepares to defy the boundaries of her empire at the Academy.",
-    image: "/api/placeholder/400/400", 
+    image: "/character_sylvie.jpg", 
     quote: "You can’t change destiny just because you know what happens next."
   },
   {
@@ -150,7 +150,7 @@ export const characters: Character[] = [
     role: "The First King",
     description: "Founder of the Sylphora Dynasty, a legendary wind mage who lives simply in a hilltop shack.",
     biography: "Elandor is the original ruler of the Sylphora Empire and a master of the Zirdunth Blade Arts. Preferring a quiet life away from the glittering palace, he takes Ragnar as his pupil and acts as a humorous, fiercely protective grandfather figure to Sylvie.",
-    image: "/api/placeholder/400/400",
+    image: "/character_elandor.jpg",
     quote: "A king must know when to leave the stage... and when to return."
   },
   {
